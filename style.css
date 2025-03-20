@@ -1,113 +1,89 @@
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: #fff;
 }
 
-body {
-    background-color: #f8fbff;
-}
-
-.trust-section {
+/* Header */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
-    max-width: 1200px;
-    margin: auto;
+    padding: 15px 50px;
+    background: #1a1a1a;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: lightgray;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    gap: 50px;
+    text-align: left;
+    padding: 0 50px;
 }
 
 .content {
-    width: 50%;
+    max-width: 45%;
 }
 
-.content h4 {
-    color: #0056d2;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.content h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.content p {
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-ul li {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.cta-button {
-    background-color: #0056d2;
+h1 {
+    font-size: 40px;
+    line-height: 1.2;
     color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
-.cta-button:hover {
-    background-color: #0041a3;
-}
-
-.image-container {
-    position: relative;
-    width: 50%;
-}
-
-.image-container img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.overlay-box {
-    position: absolute;
-    bottom: -20px;
-    left: 20px;
-    background: white;
-    padding: 15px 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.overlay-box h2 {
-    font-size: 28px;
+h1 span {
+    color: white;
     font-weight: bold;
-    color: #000;
 }
 
-.overlay-box p {
-    font-size: 14px;
-    color: #666;
+p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
 }
 
-/* Responsive Design */
-@media (max-width: 900px) {
-    .trust-section {
-        flex-direction: column;
-        text-align: center;
-    }
-    .content, .image-container {
-        width: 100%;
-    }
-    .image-container {
-        margin-top: 20px;
-    }
+.btn {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Image Styling */
+.image img {
+    width: 300px;  /* Adjust width */
+    height: 300px; /* Make it a square */
+    object-fit: cover; /* Crop to show only the face */
+    border-radius: none; /* Make it a circle */
 }
